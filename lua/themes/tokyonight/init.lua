@@ -34,3 +34,10 @@ require("tokyonight").setup({
 
 vim.opt.background = "dark" -- set this to dark or light
 vim.cmd("colorscheme tokyonight")
+vim.cmd([[ highlight rainbowcol1 guifg=#FFFFFF ]])
+vim.cmd([[ highlight rainbowcol2 guifg=#FFFFFF ]])
+vim.cmd([[ highlight rainbowcol3 guifg=#FFFFFF ]])
+vim.cmd([[ highlight rainbowcol4 guifg=#FFFFFF ]])
+vim.cmd([[ highlight rainbowcol5 guifg=#FFFFFF ]])
+vim.cmd([[ highlight rainbowcol6 guifg=#FFFFFF ]])
+vim.cmd([[ highlight rainbowcol7 guifg=#FFFFFF ]])

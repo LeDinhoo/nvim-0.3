@@ -4,27 +4,39 @@ if not status then
 end
 
 -- configure treesitter
-treesitter.setup({
-  -- enable syntax highlighting
-  highlight = {
+treesitter.setup(
+{
+    -- enable syntax highlighting
+    highlight = {
     enable = true,
-  },
-  -- enable indentation
-  indent = { enable = true },
-  -- enable autotagging (w/ nvim-ts-autotag plugin)
-  autotag = { enable = true },
-  -- ensure these language parsers are installed
-  ensure_installed = {
-    "json",
-    "javascript",
-    "typescript",
-    "html",
-    "css",
-    "markdown",
-    "lua",
-    "vim",
-	"c"
-  },
-  -- auto install above language parsers
-  auto_install = true,
+    },
+    rainbow = {
+    enable = true,
+    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+    max_file_lines = nil, -- Do not enable for files with more than n lines, int
+    -- colors = {}, -- table of hex strings
+    -- termcolors = {} -- table of colour name strings
+    },
+
+    -- enable indentation
+    indent = { enable = true },
+    -- enable autotagging (w/ nvim-ts-autotag plugin)
+    autotag = { enable = true },
+    -- ensure these language parsers are installed
+    ensure_installed = {
+        "json",
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "markdown",
+        "lua",
+        "vim",
+	    "c"
+    },
+    -- auto install above language parsers
+    auto_install = true,
 })
+
+

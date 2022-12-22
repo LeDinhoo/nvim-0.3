@@ -242,5 +242,4 @@ nvimtree.setup {
 		},
 	},
 }
-
 vim.cmd [[let g:nvim_tree_display_current_only = 1]]
