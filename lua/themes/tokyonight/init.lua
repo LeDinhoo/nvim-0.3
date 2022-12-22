@@ -34,10 +34,20 @@ require("tokyonight").setup({
 
 vim.opt.background = "dark" -- set this to dark or light
 vim.cmd("colorscheme tokyonight")
-vim.cmd([[ highlight rainbowcol1 guifg=#FFFFFF ]])
-vim.cmd([[ highlight rainbowcol2 guifg=#FFFFFF ]])
-vim.cmd([[ highlight rainbowcol3 guifg=#FFFFFF ]])
-vim.cmd([[ highlight rainbowcol4 guifg=#FFFFFF ]])
-vim.cmd([[ highlight rainbowcol5 guifg=#FFFFFF ]])
-vim.cmd([[ highlight rainbowcol6 guifg=#FFFFFF ]])
-vim.cmd([[ highlight rainbowcol7 guifg=#FFFFFF ]])
+
+local colors = require("tokyonight.colors").setup()
+
+require("scrollbar").setup({
+    handle = {
+        color = colors.bg_highlight,
+    },
+    marks = {
+        Search = { color = colors.orange },
+        Error = { color = colors.error },
+        Warn = { color = colors.warning },
+        Info = { color = colors.info },
+        Hint = { color = colors.hint },
+        Misc = { color = colors.purple },
+    }
+})
+

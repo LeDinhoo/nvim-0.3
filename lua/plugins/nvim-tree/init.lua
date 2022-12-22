@@ -5,16 +5,16 @@ end
 
 -- recommended settings from nvim-tree documentation
 vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrwplugin = 1
 
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#7D7D7D]])-- change color for arrows in tree to light blue
-vim.cmd([[ highlight NvimTreeRootFolder guibg=#E61E2128 guifg=#1E2128]])
-vim.cmd([[ highlight NvimTreeNormal guibg=#E61E2128 ]])
-vim.cmd([[ highlight NvimTreeNormalNC guibg=#E61E2128 ]])
-vim.cmd([[ highlight EndOfBuffer guifg=#1E2128]])
-vim.cmd([[ highlight NvimTreeEndOfBuffer guifg=#1E2128 ]])
-vim.cmd([[ highlight BufferOffset guibg=#E61E2128 guifg=#E61E2128 guisp=#FFFFFF]])
---vim.cmd([[ highlight BufferOffset guifg=#FFFFFF guibg=#ffffff ]])
+vim.cmd([[ highlight nvimtreeindentmarker guifg=#7d7d7d]])-- change color for arrows in tree to light blue
+vim.cmd([[ highlight nvimtreerootfolder guibg=#0c0e14 guifg=#0c0e14]])
+vim.cmd([[ highlight nvimtreenormal guibg=#e61e2128 ]])
+vim.cmd([[ highlight nvimtreenormalnc guibg=#e61e2128 ]])
+vim.cmd([[ highlight endofbuffer guifg=#0c0e14]])
+vim.cmd([[ highlight nvimtreeendofbuffer guifg=#0c0e14]])
+vim.cmd([[ highlight bufferoffset guibg=#e61e2128 guifg=#e61e2128 guisp=#ffffff]])
+vim.cmd([[ highlight cursorlinenr guifg=#e8905d cterm=bold]])
 
 
 nvimtree.setup {
@@ -119,7 +119,7 @@ nvimtree.setup {
 				},
 			},
 		},
-		special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
+		special_files = { "cargo.toml", "makefile", "readme.md", "readme.md" },
 		symlink_destination = true,
 	},
 	hijack_directories = {
@@ -143,8 +143,8 @@ nvimtree.setup {
 		show_on_open_dirs = true,
 		debounce_delay = 50,
 		severity = {
-			min = vim.diagnostic.severity.HINT,
-			max = vim.diagnostic.severity.ERROR,
+			min = vim.diagnostic.severity.hint,
+			max = vim.diagnostic.severity.error,
 		},
 		icons = {
 			hint = "",
@@ -198,7 +198,7 @@ nvimtree.setup {
 			window_picker = {
 				enable = true,
 				picker = "default",
-				chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+				chars = "abcdefghijklmnopqrstuvwxyz1234567890",
 				exclude = {
 					filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame" },
 					buftype = { "nofile", "terminal", "help" },
@@ -214,7 +214,7 @@ nvimtree.setup {
 		require_confirm = true,
 	},
 	live_filter = {
-		prefix = "[FILTER]: ",
+		prefix = "[filter]: ",
 		always_show_folders = true,
 	},
 	tab = {
@@ -225,7 +225,7 @@ nvimtree.setup {
 		},
 	},
 	notify = {
-		threshold = vim.log.levels.INFO,
+		threshold = vim.log.levels.info,
 	},
 	log = {
 		enable = false,

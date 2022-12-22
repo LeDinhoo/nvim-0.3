@@ -66,6 +66,13 @@ return packer.startup(function(use)
     use("windwp/nvim-autopairs")
     use("yamatsum/nvim-cursorline")
     use("norcalli/nvim-colorizer.lua")
+    use("petertriho/nvim-scrollbar")
+    use {"lewis6991/gitsigns.nvim",
+        config = function()
+        require('gitsigns').setup()
+        require("scrollbar.handlers.gitsigns").setup()
+        end
+        }
 
 
 
