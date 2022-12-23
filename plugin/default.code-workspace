@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../openbox/polybar/default"
+		},
+		{
+			"path": "../../openbox/polybar/forest"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../openbox/polybar/beach"
+		},
+		{
+			"path": "../../openbox/polybar/keyboards"
+		},
+		{
+			"path": "../../openbox/polybar/tealize"
+		}
+	],
+	"settings": {}
+}

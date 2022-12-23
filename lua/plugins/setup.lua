@@ -42,7 +42,6 @@ return packer.startup(function(use)
 	use("utilyre/barbecue.nvim")
 	use("smiteshp/nvim-navic")
 	use("kyazdani42/nvim-web-devicons")
-	use("folke/tokyonight.nvim")
 	use({'romgrk/barbar.nvim', wants = 'nvim-web-devicons'})
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -73,6 +72,10 @@ return packer.startup(function(use)
         require("scrollbar.handlers.gitsigns").setup()
         end
         }
+    use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+    use("nvim-treesitter/playground")
+
 
 
 
