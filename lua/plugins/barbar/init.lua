@@ -2,7 +2,7 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
 	pattern = '*',
 	callback = function()
 	  if vim.bo.filetype == 'NvimTree' then
-		require'bufferline.api'.set_offset(45, '                  EXPLORER')
+		require'bufferline.api'.set_offset(38, '              EXPLORER')
 	  end
 	end
   })

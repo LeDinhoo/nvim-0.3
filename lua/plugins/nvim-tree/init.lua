@@ -7,14 +7,14 @@ end
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwplugin = 1
 
-vim.cmd([[ highlight nvimtreeindentmarker guifg=#7d7d7d]])-- change color for arrows in tree to light blue
-vim.cmd([[ highlight nvimtreerootfolder guibg=#0c0e14 guifg=#0c0e14]])
-vim.cmd([[ highlight nvimtreenormal guibg=#e61e2128 ]])
-vim.cmd([[ highlight nvimtreenormalnc guibg=#e61e2128 ]])
-vim.cmd([[ highlight endofbuffer guifg=#0c0e14]])
-vim.cmd([[ highlight nvimtreeendofbuffer guifg=#0c0e14]])
-vim.cmd([[ highlight bufferoffset guibg=#e61e2128 guifg=#e61e2128 guisp=#ffffff]])
-vim.cmd([[ highlight cursorlinenr guifg=#e8905d cterm=bold]])
+-- vim.cmd([[ highlight nvimtreeindentmarker guifg=#7d7d7d]])-- change color for arrows in tree to light blue
+-- vim.cmd([[ highlight nvimtreerootfolder guibg=#0c0e14 guifg=#0c0e14]])
+-- vim.cmd([[ highlight nvimtreenormal guibg=#e61e2128 ]])
+-- vim.cmd([[ highlight nvimtreenormalnc guibg=#e61e2128 ]])
+-- vim.cmd([[ highlight endofbuffer guifg=#0c0e14]])
+-- vim.cmd([[ highlight nvimtreeendofbuffer guifg=#0c0e14]])
+-- vim.cmd([[ highlight bufferoffset guibg=#e61e2128 guifg=#e61e2128 guisp=#ffffff]])
+-- vim.cmd([[ highlight cursorlinenr guifg=#e8905d cterm=bold]])
 
 
 nvimtree.setup {
@@ -38,7 +38,7 @@ nvimtree.setup {
 	view = {
 		adaptive_size = false,
 		centralize_selection = false,
-		width = 45,
+		width = 37,
 		hide_root_folder = false,
 		side = "left",
 		preserve_window_proportions = false,
